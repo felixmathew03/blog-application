@@ -1,0 +1,12 @@
+.footer {
+  background: rgba(11, 15, 25, 0.9);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: auto;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
