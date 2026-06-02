@@ -33,7 +33,7 @@ import React, { useState, useEffect } from "react";
      return (
        <div className={`toast-banner glass-panel ${toast.type}`}>
          <span className="toast-icon">
-           {toast.type === "success" ? "✨" : "⚠️"}
+           {toast.type === "success" ? "✔️" : "❌"}
          </span>
          <span className="toast-message">{toast.message}</span>
        </div>

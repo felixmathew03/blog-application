@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import axios from "axios";
 import { showToast } from "../components/Toast";
 import "./Register.css";
 
 const Register = () => {
   const [loading, setLoading] = useState(false);
-
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -71,6 +71,7 @@ const Register = () => {
         password: "",
         phone: "",
       });
+      navigate("/dashboard");
     } catch (err) {
       setError(
         err.response?.data?.message || "Registration Failed"
